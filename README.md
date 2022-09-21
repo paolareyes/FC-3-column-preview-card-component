@@ -33,8 +33,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution](https://www.frontendmentor.io/solutions/)
-- Live Site URL: [Vercel](https://vercel.app/)
+- Solution URL: [Solution](https://www.frontendmentor.io/solutions/3column-preview-card-using-flex-n_lhYcpMGA)
+- Live Site URL: [Vercel](https://fc-3-column-preview-card-component.vercel.app/)
 
 ## My process
 
