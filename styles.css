@@ -1,0 +1,207 @@
+/* ------------------- */
+/* Custom properties   */
+/* ------------------- */
+
+:root {
+  /* colors */
+  --clr-bright: 31, 77%, 52%;
+  --clr-dark: 184, 100%, 22%;
+  --clr-verydark: 179, 100%, 13%;
+
+  /* font-sizes */
+  --fs-200: 2.667rem;
+  --fs-100: 1rem;
+
+  /* font-families */
+  --ff-cursive: 'Big Shoulders Display', cursive;
+  --ff-sans: 'Lexend Deca', sans-serif;
+}
+
+/* ------------------------ */
+/* Reset                    */
+/* ------------------------ */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Reset margins */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+figure,
+picture {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    font-weight: 400;
+}
+
+/* set up the body */
+
+body{
+  font-family: var(--ff-sans);
+  font-size: 15px;
+  background-color: #fff;
+  color: #fff;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+/* makes images easier to work with */
+img,
+picture {
+  max-width: 100%;
+}
+
+/* makes form elements easier to work with */
+input,
+button,
+textarea,
+select{
+  font: inherit;
+}
+
+/* ------------------------ */
+/* Utility classes          */
+/* ------------------------ */
+
+/* colors */
+
+.bg-bright {
+  background-color: hsl( var(--clr-bright));
+}
+
+.bg-dark {
+  background-color: hsl( var(--clr-dark));
+}
+
+.bg-verydark {
+  background-color: hsl( var(--clr-verydark));
+}
+
+.txt-bright {
+  color: hsl( var(--clr-bright));
+}
+
+.txt-dark {
+  color: hsl( var(--clr-dark));
+}
+
+.txt-verydark {
+  color: hsl( var(--clr-verydark));
+}
+
+/* typography */
+
+.ff-cursive {
+  font-family: var(--ff-cursive);
+}
+
+.line-height-1 {
+  line-height: 25px;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.fs-200 {
+  font-size: var(--fs-200);
+}
+
+.fs-100 {
+  font-size: var(--fs-100);
+}
+
+/* ------------------- */
+/* Components          */
+/* ------------------- */
+
+.content .card:first-of-type {
+  margin-top: 5.8rem;
+  border-radius: 10px 10px 0 0;
+}
+
+.content .card:last-of-type {
+  margin-bottom: 5.8rem;
+  border-radius: 0 0 10px 10px;
+}
+
+.card {
+  max-width: 21.8rem;
+  height: 29.467rem;
+  margin-inline: 1.6rem;
+  padding: 3.267rem 1.9rem 0 3.267rem;
+}
+
+.card img {
+  margin-bottom: 2.667rem;
+}
+
+.card h1 {
+  margin-bottom: 2.333rem;
+}
+
+.card p {
+  margin-bottom: 1.533rem;
+}
+
+.btn-learn {
+  font-size: 15px;
+  background-color: #fff;
+  border: none;
+  font-weight: 400;
+  line-height: 25px;
+  border-radius: 50px;
+  padding: 0.7rem 2rem;
+}
+
+.btn-learn:hover {
+  color: #fff;
+  outline: 2px solid #fff;
+  background-color: inherit;
+}
+
+@media only screen and (min-width: 900px) {
+  .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card {
+    width: 20.333rem;
+    height: 33.333rem;
+    margin: 0;
+    padding: 3.2rem 4.2rem 0 3.2rem;
+  }
+
+  .content .card:first-of-type {
+    margin: 0;
+    border-radius: 10px 0 0 10px;
+  }
+
+  .content .card:last-of-type {
+    margin: 0;
+    border-radius: 0 10px 10px 0;
+  }
+
+  .card p {
+    margin-bottom: 5.733rem;
+  }
+}
